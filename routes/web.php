@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\CalculoIMC;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('informacoes');
-});
+Route::get('/', [CalculoIMC::class, 'index']);
+
+Route::get('/resultado', [CalculoIMC::class, 'imc']);

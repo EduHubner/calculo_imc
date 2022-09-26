@@ -7,20 +7,20 @@
     <title>Informações</title>
 </head>
 <body>
-    <form action="" method="get">
+    <form action="{{url('/resultado')}}" method="get">
         <div>
             <h2><b>Calculo do IMC</b></h2>
             <label>Nome:</label>
             <input type="text" name="nome">
             <br>
-            <label>Data de Nascimento:</label>
+            <label>Data de Nascimento (dd/mm/aaaa):</label>
             <input type="text" name="datanasci">
             <br>
             <label>Peso (kg):</label>
-            <input type="number" name="peso">
+            <input type="text" name="peso">
             <br>
             <label>Altura (m):</label>
-            <input type="number" name="altura">
+            <input type="text" name="altura">
             <br>
             <input type="submit" name="enviar" value="Enviar">
         </div>
