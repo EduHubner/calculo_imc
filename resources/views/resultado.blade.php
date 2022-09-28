@@ -18,6 +18,8 @@
         <br>
         IMC: <b>{{$imc}}</b>
         <br>
+        Sono: <b>{{$sono}}</b>
+        <br>
         <a class="botao" href="{{URL('/')}}" title="voltar">Voltar</a>
     </div>
 </body>

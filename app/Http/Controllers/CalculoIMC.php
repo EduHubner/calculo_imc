@@ -18,7 +18,8 @@ class CalculoIMC extends Controller
         $peso = $CalculoDoIMC->peso();
         $altura = $CalculoDoIMC->altura();
         $nome = $CalculoDoIMC->nome();
+        $sono = $CalculoDoIMC->sono();
 
-    return view('resultado', ['imc'=>$imc, 'nome'=>$nome, 'idade'=>$idade, 'peso'=>$peso, 'altura'=>$altura]);
+    return view('resultado', ['imc'=>$imc, 'nome'=>$nome, 'idade'=>$idade, 'peso'=>$peso, 'altura'=>$altura, 'sono'=>$sono]);
     }
 }

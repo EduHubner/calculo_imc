@@ -22,6 +22,9 @@
             <label>Altura (m):</label>
             <input type="text" name="altura">
             <br>
+            <label>Tempo de sono (em horas):</label>
+            <input type="text" name="sono">
+            <br>
             <input type="submit" name="enviar" value="Enviar">
         </div>
     </form>
